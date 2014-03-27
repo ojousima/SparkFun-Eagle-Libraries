@@ -2241,14 +2241,16 @@ DIO-10647</description>
 </devices>
 </deviceset>
 <deviceset name="DIODE-SCHOTTKY" prefix="D">
-<description>Schottky diodes in SFE's production catalog&lt;p&gt;
-
-BAT20J 1A 23V 0.62Vf&lt;br&gt;
-RB751 120mA 40V 0.37Vf&lt;br&gt;
-PMEG4005EJ 0.5A 40V 0.42Vf&lt;br&gt;
-MBRA140 1A 40V 0.5Vf&lt;br&gt;
-B340A  3A 40V SMA &lt;br&gt;
-MBR120 20V 1A SOD123FL (&lt;a href="http://www.mouser.com/ds/2/308/MBR120VLSFT1-D-107081.pdf"&gt;Datasheet&lt;/a&gt;)</description>
+<description>&lt;b&gt;Schottky diodes&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;BAT20J 1A 23V 0.62Vf&lt;/li&gt;
+&lt;li&gt;BAT60J 3A 10V 0.53Vf (&lt;a href="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00001944.pdf"&gt;Datasheet&lt;/a&gt;) &lt;/li&gt;
+&lt;li&gt;RB751 120mA 40V 0.37Vf&lt;/li&gt;
+&lt;li&gt;PMEG4005EJ 0.5A 40V 0.42Vf&lt;/li&gt;
+&lt;li&gt;MBRA140 1A 40V 0.5Vf&lt;/li&gt;
+&lt;li&gt;B340A  3A 40V SMA &lt;/li&gt;
+&lt;li&gt;MBR120 20V 1A SOD123FL (&lt;a href="http://www.mouser.com/ds/2/308/MBR120VLSFT1-D-107081.pdf"&gt;Datasheet&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE-SCHOTTKY" x="0" y="0"/>
 </gates>
@@ -2314,6 +2316,15 @@ MBR120 20V 1A SOD123FL (&lt;a href="http://www.mouser.com/ds/2/308/MBR120VLSFT1-
 </technologies>
 </device>
 <device name="-MBR120" package="SOD-123FL">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-BAT60J" package="SOD-323">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
